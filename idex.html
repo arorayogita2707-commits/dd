@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Ayurvedic Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>🌿 Smart Ayurvedic Kit 🌿</h1>
+
+<section id="scannerSection">
+  <h2>📷 QR Code Scanner</h2>
+  <video id="preview" width="250" height="250"></video>
+  <p id="scanResult">Scan a QR code to view medicine details 👇</p>
+  <button onclick="stopScan()">Stop Scanner</button>
+</section>
+
+<div id="home">
+  <h2>Available Ayurvedic Medicines</h2>
+
+  <!-- Example card -->
+  <div class="medicine">
+    <h3>🌿 Ashwagandha</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Withania_somnifera.jpg" alt="Ashwagandha">
+    <p><b>Uses:</b> Boosts energy, reduces stress, improves stamina.</p>
+    <p><b>MFD:</b> 01-Oct-2024 | <b>EXP:</b> 01-Oct-2026</p>
+    <p><b>How to Use:</b> Take 1 capsule twice daily after meals.</p>
+    <a href="#ashwagandha" target="_blank">
+      <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=#ashwagandha" alt="QR Code for Ashwagandha">
+    </a>
+    <button onclick="showPage('ashwagandha')">View Details</button>
+  </div>
+
+  <!-- Copy more medicine cards from your CodePen version here -->
+</div>
+
+<!-- Example details section -->
+<div id="ashwagandha" class="page">
+  <h2>Ashwagandha (Withania somnifera)</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Withania_somnifera.jpg" alt="Ashwagandha">
+  <p>Reduces stress, anxiety, and increases strength and stamina.</p>
+  <p><b>MFD:</b> 01-Oct-2024 | <b>EXP:</b> 01-Oct-2026</p>
+  <p><b>How to Use:</b> Take 1 capsule twice daily after meals.</p>
+  <button onclick="goHome()">⬅ Back</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/instascan/1.0.0/instascan.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

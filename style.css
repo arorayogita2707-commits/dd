@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f5f2;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+h1, h2, h3 { color: #4b5320; }
+
+.medicine {
+  border: 2px solid #a8b545;
+  border-radius: 15px;
+  background: white;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  box-shadow: 0 0 10px #ccc;
+}
+.medicine img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.page {
+  display: none;
+  background-color: #fffbe7;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px #ccc;
+}
+.page img { width: 200px; border-radius: 10px; }
+.qr {
+  margin: 10px 0;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.qr:hover { transform: scale(1.1); }
+button {
+  background-color: #4b5320;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover { background-color: #6c7a29; }
+#scannerSection { margin-bottom: 30px; }
+video {
+  border: 2px solid #a8b545;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
